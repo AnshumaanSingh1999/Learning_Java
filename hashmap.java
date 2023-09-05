@@ -13,6 +13,5 @@ public class hashmap {
         h.clear();
         System.out.println(h);
         System.out.println(h.size());
-    }
-    
+    }   
 }
