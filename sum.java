@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class sum{
-    public static int sumation(int a,int b){
+    static int sumation(int a,int b){
         int c=a+b;
         return (c);
     }
