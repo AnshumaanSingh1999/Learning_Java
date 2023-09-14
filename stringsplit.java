@@ -7,6 +7,6 @@ public class stringsplit {
         for(String i: a){
             System.out.println(i);
         } 
-        System.out.println(a[2]);
+        //System.out.println(a[2]);
     }
 }

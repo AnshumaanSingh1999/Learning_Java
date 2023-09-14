@@ -1,25 +1,19 @@
+import java.util.Arrays;
 import java.util.Scanner;
 public class gfg_MissingNumberInArray {
     static int printthenonotavailable(int array[], int n){
         int c=0;
         int t=0;
-        for(int i=1;i<=n;i=i+1){     
-            for(int a: array){
-                if(i==a){ 
-                    c++;
-                }
-                else{
-                    t=i;
-                }
+        Arrays.sort(array);
+        for(int i=0;i<n-1;i=i+1){
+            if(array[i]==i+1){
+                c++;
             }
-            if(c==0){
-                return t;
-            } 
-            else{
-                return 0;
-            }     
-        } 
-        return 0;  
+        if(c==0){
+            t=i;
+        }
+    } 
+        return t;  
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
